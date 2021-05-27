@@ -41,7 +41,6 @@ int main (int argc, char *argv[ ]) {
   /* Send a message to the multicast group specified by the*/
   /* groupSock sockaddr structure. */
   /*int datalen = 1024;*/
-
   if(sendto(sd, databuf, datalen, 0, (struct sockaddr*)&groupSock, sizeof(groupSock)) < 0){
     perror("Sending datagram message error");}
   else
