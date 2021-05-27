@@ -12,7 +12,7 @@ int sd;
 char databuf[1024] = "Multicast test message lol!";
 int datalen = sizeof(databuf);
 
-int main (int argc, char *argv[ ]) {
+int main (int argc, char *argv[]) {
   /* Create a datagram socket on which to send. */
   sd = socket(AF_INET, SOCK_DGRAM, 0);
   if (sd < 0) {
