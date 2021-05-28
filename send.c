@@ -30,7 +30,7 @@ int main (int argc, char *argv[]) {
   /* Set local interface for outbound multicast datagrams. */
   /* The IP address specified must be associated with a local, */
   /* multicast capable interface. */
-  localInterface.s_addr = inet_addr("203.106.93.94");
+  //localInterface.s_addr = inet_addr("203.106.93.94");
   if(setsockopt(sd, IPPROTO_IP, IP_MULTICAST_IF, (char *)&localInterface, sizeof(localInterface)) < 0) {
     perror("Setting local interface error");
     exit(1);
